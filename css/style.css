@@ -14,10 +14,59 @@
     --third-background-color: #F5F4FA;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--main-title-color);
     background-color: var(--primary-background-color);
+}
+
+.container {
+    width: 1600px;
+    padding-left: 215px;
+    padding-right: 215px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list {
@@ -50,29 +99,26 @@ body {
     background-color: var(--accent-color);
 }
 
-.btn {
-    cursor: pointer;
-}
-
 .accent-color {
     color: var(--accent-color);
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+/*--------------header------------------*/
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.header-container {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-/*--------------header------------------*/
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
     font-family: Raleway;
@@ -80,7 +126,16 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--logo-color-header)
+    color:var(--logo-color-header);
+    margin-right: 93px;
+}
+
+.header-menu-list {
+    display: flex;
+}
+
+.header-menu-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .header-menu-link {
@@ -98,6 +153,19 @@ body {
     color: var(--text-color);
 }
 
+.header-connect {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacts {
+    display: flex;
+}
+
+.header-contacts-item {
+    padding: 25px;
+}
+
 /*-----------------main-page----------------------*/
 
 /*hero*/
@@ -108,11 +176,28 @@ body {
 
 .hero-title {
     color: var(--title-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .hero-button {
     color: var(--title-color);
     background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    min-width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    align-items: center;
+    text-align: center;
 }
 
 /*description*/
@@ -174,6 +259,22 @@ body {
 
 /*------------------portfolio----------------------*/
 
+.portfolio-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-list {
+    display: flex;
+}
+
+.button-item {
+    display: flex;
+
+    
+    margin: 8px;
+}
+
 .button-portfolio {
     font-weight: 500;
     font-size: 16px;
@@ -181,6 +282,12 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--secondary-button-color-background);
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-title {
@@ -203,24 +310,45 @@ body {
     background-color: var(--second-background-color);
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container-logo {
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 .footer-logo {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--logo-color-footer)
+    color: var(--logo-color-footer);
 }
 
 .footer-address {
     font-style: inherit;
 }
 
-.footer-map {
+.footer-container-contacts {
+    margin-right: auto;
+}
+
+.footer-container-contacts:not(:last-child) {
+    padding-bottom: 9px;
+}
+
+.footer-contacts-map {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    width: 231px;
 }
 
 .footer-contacts-links {
@@ -228,5 +356,9 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    width: 231px;
     }
+
+
+
 
