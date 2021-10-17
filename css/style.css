@@ -45,9 +45,8 @@ body {
 }
 
 .container {
-    width: 1600px;
-    padding-left: 215px;
-    padding-right: 215px;
+    width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -311,8 +310,7 @@ body {
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
 }
