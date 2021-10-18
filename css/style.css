@@ -51,7 +51,8 @@ body {
 }
 
 .section {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -173,7 +174,6 @@ body {
 
 .hero-container {
     padding: 200px auto;
-    margin-bottom: 94px;
 }
 
 .hero-box {
@@ -215,7 +215,6 @@ body {
 
 .description-container {
     padding: 0 0;
-    margin-bottom: 94px;
 }
 
 .description-list {
@@ -249,7 +248,6 @@ body {
 
 .what-are-we-doing-container {
     padding: 0 0;
-    margin-bottom: 94px;
 }
 
 .what-are-we-doing-title {
@@ -277,12 +275,32 @@ body {
     background-color: var(--third-background-color);
 }
 
+.our-team-container {
+    padding: 94px auto ;
+}
+
 .our-team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    min-width: 264px;
+    margin-bottom: 50px;
+}
+
+.our-team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.our-team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-team-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .our-team-masters {
