@@ -226,7 +226,7 @@ body {
     width: 270px;
 }
 
-.description-item:not(:last-child ){
+.description-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -247,12 +247,28 @@ body {
 
 /*what-are-we-doing*/
 
+.what-are-we-doing-container {
+    padding: 0 0;
+    margin-bottom: 94px;
+}
+
 .what-are-we-doing-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    min-width: 376px;
+    margin-bottom: 50px;
+}
+
+.what-are-we-doing-list {
+    display: flex;
+    justify-content: center;
+}
+
+.what-are-we-doing-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /*our-team*/
