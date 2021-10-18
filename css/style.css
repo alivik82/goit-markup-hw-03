@@ -111,10 +111,7 @@ body {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
-    padding-top: 32px;
-    padding-right: auto;
-    padding-bottom: 32px;
-    padding-left: auto;
+    padding: 32px 0;
 }
 
 .header-nav {
@@ -173,7 +170,7 @@ body {
 }
 
 .hero-container {
-    padding: 200px auto;
+    padding: 200px 0;
 }
 
 .hero-box {
@@ -277,7 +274,7 @@ body {
 }
 
 .our-team-container {
-    padding: 94px auto ;
+    padding: 94px 0;
 }
 
 .our-team-title {
@@ -385,10 +382,7 @@ body {
 .footer-container {
     display: flex;
     flex-direction:column;
-    padding-top: 60px;
-    padding-right: auto;
-    padding-bottom: 60px;
-    padding-left: auto;
+    padding: 60px 0;
 }
 
 .footer-container-logo {
